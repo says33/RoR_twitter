@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>bundle-gem - bundler-1.12.2 Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/darkfish.js"></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../lib/bundler/man/bundle.html">bundle</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-config.html">bundle-config</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-config_txt.html">bundle-config</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-exec.html">bundle-exec</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-exec_txt.html">bundle-exec</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-gem.html">bundle-gem</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-gem_txt.html">bundle-gem</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-install.html">bundle-install</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-install_txt.html">bundle-install</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-lock.html">bundle-lock</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-lock_txt.html">bundle-lock</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-package.html">bundle-package</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-package_txt.html">bundle-package</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-platform.html">bundle-platform</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-platform_txt.html">bundle-platform</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-update.html">bundle-update</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-update_txt.html">bundle-update</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle_txt.html">bundle</a>
+  
+    <li><a href="../../../lib/bundler/man/gemfile_5.html">gemfile.5</a>
+  
+    <li><a href="../../../lib/bundler/man/gemfile_5_txt.html">gemfile.5</a>
+  
+    <li><a href="../../../lib/bundler/templates/Executable.html">Executable</a>
+  
+    <li><a href="../../../lib/bundler/templates/Executable_standalone.html">Executable.standalone</a>
+  
+    <li><a href="../../../lib/bundler/templates/Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/CODE_OF_CONDUCT_md_tt.html">CODE_OF_CONDUCT.md.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/Gemfile_tt.html">Gemfile.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/LICENSE_txt_tt.html">LICENSE.txt.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/README_md_tt.html">README.md.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/Rakefile_tt.html">Rakefile.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/bin/console_tt.html">console.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/bin/setup_tt.html">setup.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/exe/newgem_tt.html">newgem.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/ext/newgem/extconf_rb_tt.html">extconf.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/ext/newgem/newgem_c_tt.html">newgem.c.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/ext/newgem/newgem_h_tt.html">newgem.h.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/gitignore_tt.html">gitignore.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/lib/newgem_rb_tt.html">newgem.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/lib/newgem/version_rb_tt.html">version.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/newgem_gemspec_tt.html">newgem.gemspec.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/rspec_tt.html">rspec.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/spec/newgem_spec_rb_tt.html">newgem_spec.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/spec/spec_helper_rb_tt.html">spec_helper.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/test/newgem_test_rb_tt.html">newgem_test.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/test/test_helper_rb_tt.html">test_helper.rb.tt</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page lib/bundler/man/bundle-gem.txt">
+
+<p>BUNDLE-GEM(1)                                                   
+BUNDLE-GEM(1)</p>
+
+<p>1mNAME0m</p>
+
+<pre>1mbundle-gem 22m- Generate a project skeleton for creating a rubygem</pre>
+
+<p>1mSYNOPSIS0m</p>
+
+<pre>1mbundle gem 4m22mGEM_NAME24m 4mOPTIONS0m</pre>
+
+<p>1mDESCRIPTION0m</p>
+
+<pre>Generates a directory named 1mGEM_NAME 22mwith a 1mRakefile22m, 1mGEM_NAME.gemspec22m,
+and other supporting files and directories that can be used to  develop
+a rubygem with that name.
+
+Run  1mrake -T 22min the resulting project for a list of Rake tasks that can
+used to test and publish the gem to rubygems.org.
+
+The generated project skeleton  can  be  customized  with  OPTIONS,  as
+explained  below.  Note  that  these  options can also be specified via
+Bundler&#39;s global configuration file using the following names:
+
+o   1mgem.coc0m
+
+o   1mgem.mit0m
+
+o   1mgem.test0m</pre>
+
+<p>1mOPTIONS0m</p>
+
+<pre>1m--exe 22mor 1m-b 22mor 1m--bin0m
+       Specify that Bundler  should  create  a  binary  executable  (as
+       1mexe/GEM_NAME22m) in the generated rubygem project. This binary will
+       also be added to the 1mGEM_NAME.gemspec 22mmanifest. This behavior is
+       disabled by default.
+
+1m--no-exe0m
+       Do  not create a binary (overrides 1m--exe 22mspecified in the global
+       config).
+
+1m--coc  22mAdd a 1mCODE_OF_CONDUCT.md 22mfile  to  the  root  of  the  generated
+       project.  If  this  option is unspecified, an interactive prompt
+       will be displayed and the answer  will  be  saved  in  Bundler&#39;s
+       global config for future 1mbundle gem 22muse.
+
+1m--no-coc0m
+       Do not create a 1mCODE_OF_CONDUCT.md 22m(overrides 1m--coc 22mspecified in
+       the global config).
+
+1m--ext  22mAdd boilerplate for C extension code to the  generated  project.
+       This behavior is disabled by default.
+
+1m--no-ext0m
+       Do  not  add  C extension code (overrides 1m--ext 22mspecified in the
+       global config).
+
+1m--mit  22mAdd an MIT license to a 1mLICENSE.txt 22mfile in the root of the gen-
+       erated project. Your name from the global git config is used for
+       the copyright statement.  If  this  option  is  unspecified,  an
+       interactive  prompt  will  be  displayed  and the answer will be
+       saved in Bundler&#39;s global config for future 1mbundle gem 22muse.
+
+1m--no-mit0m
+       Do not create a 1mLICENSE.txt 22m(overrides 1m--mit  22mspecified  in  the
+       global config).
+
+1m-t22m, 1m--test=minitest22m, 1m--test=rspec0m
+       Specify the test framework that Bundler should use when generat-
+       ing the project. Acceptable values are 1mminitest 22mand  1mrspec22m.  The
+       1mGEM_NAME.gemspec  22mwill  be  configured  and a skeleton test/spec
+       directory will be created based on this option. If  this  option
+       is  unspecified, an interactive prompt will be displayed and the
+       answer will be saved in Bundler&#39;s global config for future  1mbun-0m
+       1mdle gem 22muse.
+
+1m-e22m, 1m--edit[=EDITOR]0m
+       Open  the  resulting  GEM_NAME.gemspec in EDITOR, or the default
+       editor if not specified. The default is  1m$BUNDLER_EDITOR22m,  1m$VIS-0m
+       1mUAL22m, or 1m$EDITOR22m.</pre>
+
+<p>1mSEE ALSO0m</p>
+
+<pre>o   bundle-config(1)
+
+                           April 2016                     BUNDLE-GEM(1)</pre>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

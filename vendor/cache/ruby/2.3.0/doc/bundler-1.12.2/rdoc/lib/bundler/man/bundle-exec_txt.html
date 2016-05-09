@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>bundle-exec - bundler-1.12.2 Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/darkfish.js"></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../lib/bundler/man/bundle.html">bundle</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-config.html">bundle-config</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-config_txt.html">bundle-config</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-exec.html">bundle-exec</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-exec_txt.html">bundle-exec</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-gem.html">bundle-gem</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-gem_txt.html">bundle-gem</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-install.html">bundle-install</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-install_txt.html">bundle-install</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-lock.html">bundle-lock</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-lock_txt.html">bundle-lock</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-package.html">bundle-package</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-package_txt.html">bundle-package</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-platform.html">bundle-platform</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-platform_txt.html">bundle-platform</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-update.html">bundle-update</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle-update_txt.html">bundle-update</a>
+  
+    <li><a href="../../../lib/bundler/man/bundle_txt.html">bundle</a>
+  
+    <li><a href="../../../lib/bundler/man/gemfile_5.html">gemfile.5</a>
+  
+    <li><a href="../../../lib/bundler/man/gemfile_5_txt.html">gemfile.5</a>
+  
+    <li><a href="../../../lib/bundler/templates/Executable.html">Executable</a>
+  
+    <li><a href="../../../lib/bundler/templates/Executable_standalone.html">Executable.standalone</a>
+  
+    <li><a href="../../../lib/bundler/templates/Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/CODE_OF_CONDUCT_md_tt.html">CODE_OF_CONDUCT.md.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/Gemfile_tt.html">Gemfile.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/LICENSE_txt_tt.html">LICENSE.txt.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/README_md_tt.html">README.md.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/Rakefile_tt.html">Rakefile.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/bin/console_tt.html">console.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/bin/setup_tt.html">setup.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/exe/newgem_tt.html">newgem.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/ext/newgem/extconf_rb_tt.html">extconf.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/ext/newgem/newgem_c_tt.html">newgem.c.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/ext/newgem/newgem_h_tt.html">newgem.h.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/gitignore_tt.html">gitignore.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/lib/newgem_rb_tt.html">newgem.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/lib/newgem/version_rb_tt.html">version.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/newgem_gemspec_tt.html">newgem.gemspec.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/rspec_tt.html">rspec.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/spec/newgem_spec_rb_tt.html">newgem_spec.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/spec/spec_helper_rb_tt.html">spec_helper.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/test/newgem_test_rb_tt.html">newgem_test.rb.tt</a>
+  
+    <li><a href="../../../lib/bundler/templates/newgem/test/test_helper_rb_tt.html">test_helper.rb.tt</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page lib/bundler/man/bundle-exec.txt">
+
+<p>BUNDLE-EXEC(1)                                                 
+BUNDLE-EXEC(1)</p>
+
+<p>1mNAME0m</p>
+
+<pre>1mbundle-exec 22m- Execute a command in the context of the bundle</pre>
+
+<p>1mSYNOPSIS0m</p>
+
+<pre>1mbundle exec 22m[--keep-file-descriptors] 4mcommand0m</pre>
+
+<p>1mDESCRIPTION0m</p>
+
+<pre>This  command  executes  the  command, making all gems specified in the
+1mGemfile(5) 22mavailable to 1mrequire 22min Ruby programs.
+
+Essentially, if you  would  normally  have  run  something  like  1mrspec0m
+1mspec/my_spec.rb22m,  and  you  want  to use the gems specified in the 1mGem-0m
+1mfile(5) 22mand installed via bundle install(1) 4mbundle-install.1.html24m,  you
+should run 1mbundle exec rspec spec/my_spec.rb22m.
+
+Note  that 1mbundle exec 22mdoes not require that an executable is available
+on your shell&#39;s 1m$PATH22m.</pre>
+
+<p>1mOPTIONS0m</p>
+
+<pre>1m--keep-file-descriptors0m
+       Exec in Ruby 2.0 began discarding non-standard file descriptors.
+       When  this flag is passed, exec will revert to the 1.9 behaviour
+       of passing all file descriptors to the new process.</pre>
+
+<p>1mBUNDLE INSTALL –BINSTUBS0m</p>
+
+<pre>If  you  use  the   1m--binstubs   22mflag   in   bundle   install(1)   4mbun-0m
+4mdle-install.1.html24m,  Bundler  will  automatically  create  a  directory
+(which defaults to 1mapp_root/bin22m)  containing  all  of  the  executables
+available from gems in the bundle.
+
+After  using 1m--binstubs22m, 1mbin/rspec spec/my_spec.rb 22mis identical to 1mbun-0m
+1mdle exec rspec spec/my_spec.rb22m.</pre>
+
+<p>1mENVIRONMENT MODIFICATIONS0m</p>
+
+<pre>    1mbundle exec 22mmakes a number of changes to the  shell  environment,  then
+    executes the command you specify in full.
+
+    o   make  sure  that  it&#39;s  still  possible to shell out to 1mbundle 22mfrom
+        inside a command invoked by 1mbundle exec 22m(using 1m$BUNDLE_BIN_PATH22m)
+
+    o   put  the  directory  containing  executables  (like  1mrails22m,  1mrspec22m,
+        1mrackup22m) for your bundle on 1m$PATH0m
+
+    o   make  sure  that if bundler is invoked in the subshell, it uses the
+        same 1mGemfile 22m(by setting 1mBUNDLE_GEMFILE22m)
+
+    o   add 1m-rbundler/setup 22mto 1m$RUBYOPT22m, which makes sure  that  Ruby  pro-
+        grams invoked in the subshell can see the gems in the bundle
+
+    It also modifies Rubygems:
+
+    o   disallow loading additional gems not in the bundle
+
+    o   modify  the 1mgem 22mmethod to be a no-op if a gem matching the require-
+        ments is in the bundle, and to raise a 1mGem::LoadError 22mif it&#39;s not
+
+    o   Define 1mGem.refresh 22mto be a no-op, since the source index is  always
+        frozen  when  using  bundler,  and  to prevent gems from the system
+        leaking into the environment
+
+    o   Override 1mGem.bin_path 22mto use the gems in the bundle, making  system
+        executables work
+
+    o   Add all gems in the bundle into Gem.loaded_specs
+
+1mShelling out0m
+    Any  Ruby  code that opens a subshell (like 1msystem22m, backticks, or 1m%x{}22m)
+    will automatically use the current Bundler environment. If you need  to
+    shell  out  to  a Ruby command that is not part of your current bundle,
+    use the 1mwith_clean_env 22mmethod  with  a  block.  Any  subshells  created
+    inside  the  block will be given the environment present before Bundler
+    was activated. For example, Homebrew commands run Ruby, but don&#39;t  work
+    inside a bundle:
+
+        Bundler.with_clean_env do
+          `brew install wget`
+        end
+
+    Using  1mwith_clean_env  22mis  also  necessary if you are shelling out to a
+    different bundle. Any Bundler commands run in a subshell  will  inherit
+    the  current  Gemfile, so commands that need to run in the context of a
+    different bundle also need to use 1mwith_clean_env22m.
+
+        Bundler.with_clean_env do
+          Dir.chdir &quot;/other/bundler/project&quot; do
+            `bundle exec ./script`
+          end
+        end
+
+    Bundler provides convenience helpers that wrap  1msystem  22mand  1mexec22m,  and
+    they can be used like this:
+
+        Bundler.clean_system(&#39;brew install wget&#39;)
+        Bundler.clean_exec(&#39;brew install wget&#39;)</pre>
+
+<p>1mRUBYGEMS PLUGINS0m</p>
+
+<pre>At  present,  the  Rubygems  plugin  system  requires  all  files named
+1mrubygems_plugin.rb 22mon the load path of 4many24m installed gem when any  Ruby
+code requires 1mrubygems.rb22m. This includes executables installed into the
+system, like 1mrails22m, 1mrackup22m, and 1mrspec22m.
+
+Since Rubygems plugins can contain arbitrary Ruby code,  they  commonly
+end up activating themselves or their dependencies.
+
+For  instance,  the 1mgemcutter 0.5 22mgem depended on 1mjson_pure22m. If you had
+that version of gemcutter installed (even if you 4malso24m had a newer  ver-
+sion  without  this problem), Rubygems would activate 1mgemcutter 0.5 22mand
+1mjson_pure &lt;latest&gt;22m.
+
+If your Gemfile(5) also contained 1mjson_pure 22m(or a gem with a dependency
+on  1mjson_pure22m),  the  latest version on your system might conflict with
+the version in your Gemfile(5), or the snapshot version  in  your  1mGem-0m
+1mfile.lock22m.
+
+If this happens, bundler will say:
+
+    You have already activated json_pure 1.4.6 but your Gemfile
+    requires json_pure 1.4.3. Consider using bundle exec.
+
+In  this  situation, you almost certainly want to remove the underlying
+gem with the problematic gem plugin. In general, the authors  of  these
+plugins  (in this case, the 1mgemcutter 22mgem) have released newer versions
+that are more careful in their plugins.
+
+You can find a list of all the gems containing gem plugins by running
+
+    ruby -rubygems -e &quot;puts Gem.find_files(&#39;rubygems_plugin.rb&#39;)&quot;
+
+At the very least, you should remove all but the newest version of each
+gem  plugin, and also remove all gem plugins that you aren&#39;t using (1mgem0m
+1muninstall gem_name22m).
+
+                           March 2016                    BUNDLE-EXEC(1)</pre>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
