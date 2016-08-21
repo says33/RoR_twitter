@@ -1,0 +1,17 @@
+{
+  "name": "page",
+  "version": "0.0.0",
+  "homepage": "https://github.com/says33/RoR_twitter",
+  "authors": [
+    "says33 <says.rodriguez@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "grails-app/assets/javascripts/third-party",
+    "test",
+    "tests"
+  ]
+}
